@@ -51,10 +51,12 @@ const titleInput = document.getElementById("titleInput");
 talk_summaryForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const talkInput = titleInput.value;
-
-  userTopic.textContent = talkInput;
-
+  const talkInput = titleInput.value.trim();
+  if (talkInput === "") {
+    alert("Please add title")
+  } else{
+   userTopic.textContent = talkInput;
+  }
  
 });
 
