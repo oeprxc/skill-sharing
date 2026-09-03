@@ -38,24 +38,39 @@
           </div>
 
           <!-- Topic and COMMENT-->
-          <section id="topics_comments">
-            <div class="topic">
+
+          <div class="topicContainer">
+
+           <section id="topics_comments">
+              
+              <div class="topic">
               <h2 id="userTopic">Introduction to JavaScript</h2>
-              <button id="deleteBtn">Delete</button>
-            </div>
+                   <button id="deleteBtn">Delete</button>     
+                       
+            </div> 
+
             <p id="author">by Precious</p>
+
             <p class="topicText">
               JavaScript is a programming language of the web, in this talk,
             </p>
-            <p class="topicText">
+
+            <p class="topicText ">
               we will explore the basics of JavaScript and how it powers
             </p>
+
             <p class="topicText">interactive websites.</p>
             <hr />
+              </section>
+             
+          </div>
 
+              <section id="comment">
             <!-- COMMENTS -->
             <div class="comment">
+
               <h3 id="commentText">Comments (2)</h3>
+
               <ul id="userCommentList">
                 <li>Great talk! Very insightful.</li>
                 <li>Thanks for sharing this.</li>
@@ -63,6 +78,7 @@
 
               <!-- COMMENT INPUT -->
               <div class="enterComment">
+
                 <form action="" id="commentForm">
                   <input
                     type="text"
@@ -71,14 +87,16 @@
                   />
                   <button type="submit" id="commentBtn">Add Comment</button>
                 </form>
+
               </div>
             </div>
-          </section>
+        </section>
 
           <!-- SUMBIT TALK SECTION -->
           <section class="submitTalk">
             <h2 id="submitaTalk">Submit a Talk</h2>
             <!-- TALK -->
+
             <form action="" id="talk_summaryForm">
               <div class="talk">
                 <h4 class="title_summary">Title:</h4>
@@ -91,6 +109,7 @@
               </div>
 
               <div class="summary">
+
                 <h4 class="title_summary">Summary:</h4>
                 <textarea
                   name="summary"
@@ -102,8 +121,9 @@
             </form>
           </section>
         </main>
+
       </div>
     </div>
-    <script></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -55,6 +55,11 @@ html {
   display: block;
 }
 
+.hideText {
+    display: none !important
+}
+
+
 .enterComment {
   display: flex;
   justify-content: space-between;
@@ -77,3 +82,5 @@ html {
 section {
   padding: 2rem;
 }
+
+
