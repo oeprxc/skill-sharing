@@ -60,13 +60,8 @@ html {
 }
 
 
-.enterComment {
-  display: flex;
-  justify-content: space-between;
-}
-
 #commentInput {
-  width: 80%;
+  width: 100% !important;
 }
 
 /* SUBMIT TALK - SUMMARY */
