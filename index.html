@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skill-Sharing</title>
+    <title>Skill Sharing</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,17 +13,91 @@
     />
   </head>
   <body>
-
     <div class="container">
 
-        <div class="card">
-            
-        </div>
+
+      <div class="card">
+        <!-- Header -->
+        <header>
+          <div class="title">
+            <h1 id="title">SKILL SHARING</h1>
+          </div>
+        </header>
+
+        <main>
+          <div class="userInput">
+            <!-- User Input -->
+            <form action="" id="inputForm">
+
+              <div class="nameSection">
+              <label for="name" id="name">Your name:</label>
+              <input
+                type="text"
+                id="userName"
+                placeholder="Enter your name..."
+              />
+             </div>
+              <!-- Topic and COMMENT-->
+
+              <section id="topics_comments">
+                <div class="topic">
+                  <h2 id="userTopic">Introduction to JavaScript</h2>
+                  <button type="submit" id="topicBtn">Delete</button>
+                </div>
+                <p id="author">by Precious</p>
+                <p class="topicText">
+                  JavaScript is a programming language of the web, in this talk,
+                </p>
+                <p class="topicText">
+                  we will explore the basics of JavaScript and how it powsers
+                </p>
+                <p class="topicText">interactive websites.</p>
+                <hr />
+
+                <!-- COMMENTS -->
+                <div class="comment">
+                  <h3 id="commentText">Comments (2)</h3>
+                  <ul id="userCommentList">
+                    <li>Great talk! Very insightful.</li>
+                    <li>Thanks for sharing this.</li>
+                  </ul>
+
+                  <!-- COMMENT INPUT -->
+                  <div class="enterComment">
+                    <input
+                      type="text"
+                      id="commentInput"
+                      placeholder="Write a comment..."
+                    />
+                    <button type="submit" id="commentBtn">Add Comment</button>
+                  </div>
+                </div>
+              </section>
 
 
+              <!-- SUMBIT TALK SECTION -->
+               <section class="submitTalk">
+  
+                 <h2 id="submitaTalk">Submit a Talk</h2>
+                  <!-- TALK -->
+                 <div class="talk">
+                 <h4 class="title_summary">Title:</h4>
+                 <input type="text" id="titleInput" placeholder="Enter your talk...">
+                 </div>
 
+                 <div class="summary">
+                  <h4 class="title_summary">Summary:</h4>
+                 <textarea name="summary" id="summary" placeholder="Enter a summary of your talk..."></textarea>
+                 <button type="submit" id="submitTalkBtn">Submit talk</button>
+                 </div>
 
+               </section>
+            </form>
+          </div>
 
+        </main>
+
+      </div>
     </div>
     <script></script>
   </body>

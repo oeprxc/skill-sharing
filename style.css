@@ -1,15 +1,79 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+body {
+  font-size: var(--font-size);
+  line-height: 1.5;
 }
 
 html {
-    font-size: 16px;
+  font-size: 62.5%;
 }
 
 :root {
-    --text-color: black;
-    --font-size: 1.2rem;
+  --text-color: black;
+  --font-size: 1.7rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 50%;
+  height: auto;
+  border: 1px solid black;
+  /* padding: 2rem; */
+}
+
+#title {
+  text-align: center;
+}
+
+.nameSection {
+  padding: 2rem;
+}
+
+#userName {
+  width: 100%;
+}
+
+/* topic and comment */
+
+.topic {
+  display: flex;
+  justify-content: space-between;
+}
+
+#name {
+  display: block;
+}
+
+.enterComment {
+  display: flex;
+  justify-content: space-between;
+}
+
+#commentInput {
+  width: 80%;
+}
+
+/* SUBMIT TALK - SUMMARY */
+
+#titleInput {
+  width: 100%;
+}
+
+#summary {
+  width: 100%;
+}
+
+section {
+  padding: 2rem;
 }
