@@ -22,6 +22,7 @@ commentForm.addEventListener("submit", (event) => {
   const userCommentInput = commentInput.value.trim();
   console.log(userCommentInput);
 
+  // Update comment
   if (userCommentInput === "") {
     alert("Leave a comment!");
     return;
@@ -46,18 +47,40 @@ const talk_summaryForm = document.getElementById("talk_summaryForm");
 
 const titleInput = document.getElementById("titleInput");
 
+const topicText = document.querySelector(".topicText");
 
+const summaryText = document.getElementById("summaryText");
+
+// Updating the author
+const author = document.getElementById("author");
+const userName = document.getElementById("userName");
 
 talk_summaryForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  // Update title
   const talkInput = titleInput.value.trim();
   if (talkInput === "") {
-    alert("Please add title")
-  } else{
-   userTopic.textContent = talkInput;
+    alert("Please add a title");
+  } else {
+    userTopic.textContent = talkInput;
   }
- 
+
+  //  Update summary
+  const summaryInput = summaryText.value.trim();
+  if (summaryInput === "") {
+    alert("Please add a summary.");
+    return;
+  }
+
+  topicText.textContent = summaryInput;
+
+  // Update author
+  const userNameInput = userName.value.trim();
+  if (userNameInput === "") {
+    alert("authored by who?");
+  } else {
+    author.textContent = `by ${userNameInput}`;
+    return;
+  }
 });
-
-
