@@ -50,6 +50,10 @@ html {
   width: 100%;
 }
 
+.hideText {
+  display: none;
+}
+
 /* topic and comment */
 
 .topic {
@@ -140,7 +144,7 @@ button:hover {
 }
 
 #deleteBtn {
-  margin-left: 1rem;
+  margin-left: 2rem;
   background-color: #f74434;
   border: 1px solid #f74434;
   color: var(--button-color);

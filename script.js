@@ -5,7 +5,12 @@ const deleteBtn = document.getElementById("deleteBtn");
 const topics_comments = document.getElementById("topics_comments");
 
 deleteBtn.addEventListener("click", () => {
-  topics_comments.remove();
+  topics_comments.classList.toggle("hideText");
+  if(topics_comments.classList.contains("hideText")) {
+    deleteBtn.textContent = "Show Talk"
+  } else {
+    deleteBtn.textContent = "Delete Talk"
+  }
 });
 
 // Add comment
