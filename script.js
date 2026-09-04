@@ -5,7 +5,7 @@ const deleteBtn = document.getElementById("deleteBtn");
 const topics_comments = document.getElementById("topics_comments");
 
 deleteBtn.addEventListener("click", () => {
-  topics_comments.classList.toggle("hideText");
+  topics_comments.remove();
 });
 
 // Add comment
