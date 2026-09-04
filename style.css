@@ -32,7 +32,7 @@ html {
 .card {
   width: auto;
   height: auto;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20) !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2) !important;
   background-color: var(--card-background-color);
   margin-top: 2rem;
 }
@@ -61,10 +61,6 @@ html {
   display: block;
 }
 
-.hideText {
-  display: none !important;
-}
-
 #commentInput {
   width: 100% !important;
 }
@@ -79,7 +75,8 @@ html {
   width: 100%;
   padding: var(--input-padding);
   border: none;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20) !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 1rem;
 }
 
 section {
@@ -87,21 +84,19 @@ section {
   margin-bottom: 2rem;
 }
 
-
-/* FORM INPUT */
+/* FORM INPUTS */
 
 input {
   padding: var(--input-padding);
-  border-radius: 10px;
+  border-radius: 1rem;
   border: none;
-   margin-top: 0.5rem;
-   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20) !important;
+  margin-top: 0.5rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2) !important;
 }
 
 input::placeholder {
   font-size: var(--font-size);
   color: var(--text-color);
- 
 }
 
 ul {
@@ -113,20 +108,19 @@ li::marker {
   position: absolute;
 }
 
-
 /* BUTTONS */
 
 button {
   padding: var(--button-padding);
-   font-size: 1.5rem;
-   cursor: pointer;
-   border-radius: 0.5rem;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20) !important;
-   transition: opacity 0.2s ease;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2) !important;
+  transition: opacity 0.2s ease;
 }
 
 button:active {
- transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 button:disabled {
@@ -139,24 +133,56 @@ button:hover {
 }
 
 #commentBtn {
- margin-top: 1rem;
- background-color: #26bd3f;
- border: 1px solid #26bd3f;
- color: var(--button-color);
+  margin-top: 1rem;
+  background-color: #26bd3f;
+  border: 1px solid #26bd3f;
+  color: var(--button-color);
 }
 
 #deleteBtn {
   margin-left: 1rem;
   background-color: #f74434;
   border: 1px solid #f74434;
-   color: var(--button-color);
+  color: var(--button-color);
 }
 
 #submitTalkBtn {
   background-color: #3478f7;
   border: 1px solid #3478f7;
- color: var(--button-color);
- margin-top: 0.3rem;
+  color: var(--button-color);
+  margin-top: 0.5rem;
 }
 
+strong {
+  color: #3478f7;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
 
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 601px) and (max-width: 789px) {
+  .card {
+    width: 100%;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 60rem;
+    margin: 2rem auto;
+  }
+}

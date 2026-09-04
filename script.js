@@ -80,7 +80,8 @@ talk_summaryForm.addEventListener("submit", (event) => {
   if (userNameInput === "") {
     alert("authored by who?");
   } else {
-    author.textContent = `by ${userNameInput}`;
+    author.innerHTML = `by <strong>${userNameInput}</strong>`;
     return;
   }
+
 });
