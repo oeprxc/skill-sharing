@@ -8,7 +8,7 @@
 
 body {
   font-size: var(--font-size);
-  line-height: 1.5;
+  padding: 2rem;
 }
 
 html {
@@ -18,6 +18,10 @@ html {
 :root {
   --text-color: black;
   --font-size: 1.7rem;
+  --card-background-color: white;
+  --input-padding: 1.5rem;
+  --button-padding: 1rem;
+  --button-color: white;
 }
 
 .container {
@@ -26,14 +30,16 @@ html {
 }
 
 .card {
-  width: 50%;
+  width: auto;
   height: auto;
-  border: 1px solid black;
-  /* padding: 2rem; */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20) !important;
+  background-color: var(--card-background-color);
+  margin-top: 2rem;
 }
 
 #title {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .nameSection {
@@ -56,9 +62,8 @@ html {
 }
 
 .hideText {
-    display: none !important
+  display: none !important;
 }
-
 
 #commentInput {
   width: 100% !important;
@@ -72,10 +77,86 @@ html {
 
 #summaryText {
   width: 100%;
+  padding: var(--input-padding);
+  border: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20) !important;
 }
 
 section {
   padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+/* FORM INPUT */
+
+input {
+  padding: var(--input-padding);
+  border-radius: 10px;
+  border: none;
+   margin-top: 0.5rem;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20) !important;
+}
+
+input::placeholder {
+  font-size: var(--font-size);
+  color: var(--text-color);
+ 
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+li::marker {
+  font-size: 2rem;
+  position: absolute;
+}
+
+
+/* BUTTONS */
+
+button {
+  padding: var(--button-padding);
+   font-size: 1.5rem;
+   cursor: pointer;
+   border-radius: 0.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20) !important;
+   transition: opacity 0.2s ease;
+}
+
+button:active {
+ transform: scale(0.97);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#commentBtn {
+ margin-top: 1rem;
+ background-color: #26bd3f;
+ border: 1px solid #26bd3f;
+ color: var(--button-color);
+}
+
+#deleteBtn {
+  margin-left: 1rem;
+  background-color: #f74434;
+  border: 1px solid #f74434;
+   color: var(--button-color);
+}
+
+#submitTalkBtn {
+  background-color: #3478f7;
+  border: 1px solid #3478f7;
+ color: var(--button-color);
+ margin-top: 0.3rem;
 }
 
 
