@@ -30,11 +30,15 @@ html {
 }
 
 .card {
-  width: auto;
+  max-width: 40vw;
   height: auto;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2) !important;
   background-color: var(--card-background-color);
   margin-top: 2rem;
+}
+
+.card p {
+  overflow-wrap: break-word;
 }
 
 #title {
@@ -128,7 +132,7 @@ button:active {
 }
 
 button:disabled {
-  opacity: 0.5;
+  opacity: 1;
   cursor: not-allowed;
 }
 
@@ -148,6 +152,7 @@ button:hover {
   background-color: #f74434;
   border: 1px solid #f74434;
   color: var(--button-color);
+  transition: all 0.3s ease;
 }
 
 #submitTalkBtn {
@@ -172,7 +177,6 @@ strong {
 }
 
 @media only screen and (max-width: 600px) {
-
   body {
     padding: 1.5rem;
   }

@@ -6,10 +6,10 @@ const topics_comments = document.getElementById("topics_comments");
 
 deleteBtn.addEventListener("click", () => {
   topics_comments.classList.toggle("hideText");
-  if(topics_comments.classList.contains("hideText")) {
-    deleteBtn.textContent = "Show Talk"
+  if (topics_comments.classList.contains("hideText")) {
+    deleteBtn.textContent = "Undo";
   } else {
-    deleteBtn.textContent = "Delete Talk"
+    deleteBtn.textContent = "Delete Talk";
   }
 });
 
@@ -88,5 +88,4 @@ talk_summaryForm.addEventListener("submit", (event) => {
     author.innerHTML = `by <strong>${userNameInput}</strong>`;
     return;
   }
-
 });
