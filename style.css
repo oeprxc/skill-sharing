@@ -132,7 +132,7 @@ button:active {
 }
 
 button:disabled {
-  opacity: 1;
+  opacity: 0.1;
   cursor: not-allowed;
 }
 
